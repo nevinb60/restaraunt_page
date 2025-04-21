@@ -1,4 +1,5 @@
 import { loadOrder } from "./order";
+import ChocolateChipCookie from "./assests/chocolate-chip-cookies.png"
 
 export function loadHome(contentElement) {
     //Banner
@@ -9,7 +10,7 @@ export function loadHome(contentElement) {
     const headingDiv = document.createElement('div')
 
     headingDiv.classList = 'h-1/2 bg-white p-5 w-screen'
-    headingDiv.style.backgroundImage = "url('./chocolate-chip-cookies.png')"
+    headingDiv.style.backgroundImage = ChocolateChipCookie
     headingDiv.style.backgroundSize = 'cover'
 
     const brand = document.createElement('h1')
