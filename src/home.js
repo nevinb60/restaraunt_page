@@ -1,5 +1,5 @@
 import { loadOrder } from "./order";
-import ChocolateChipCookie from "./assests/chocolate-chip-cookies.png"
+import ChocolateChipCookie from "./assets/chocolate-chip-cookies.png"
 
 export function loadHome(contentElement) {
     //Banner
