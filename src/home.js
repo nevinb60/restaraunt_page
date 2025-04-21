@@ -1,5 +1,8 @@
 import { loadOrder } from "./order";
 import CookieBanner from "./asset/chocolate-chip-cookies.png"
+import CookieImage1 from "./asset/chocolate-chip-cookie.jpeg"
+import CookieImage2 from "./asset/chocolate-cookie.jpeg"
+import CookieImage3 from "./asset/marshmallow.jpeg"
 
 export function loadHome(contentElement) {
     //Banner
@@ -10,7 +13,7 @@ export function loadHome(contentElement) {
     const headingDiv = document.createElement('div')
 
     headingDiv.classList = 'h-1/2 bg-white p-5 w-screen'
-    headingDiv.style.backgroundImage = CookieBanner
+    headingDiv.style.backgroundImage = `url(${CookieBanner})`
     headingDiv.style.backgroundSize = 'cover'
 
     const brand = document.createElement('h1')
@@ -36,10 +39,9 @@ export function loadHome(contentElement) {
     slideDeck.classList = 'flex justify-center gap-8'
 
     const cookieImages = [
-        "./chocolate-chip-cookie.jpeg",
-        './marshmallow.jpeg',
-        "./chocolate-cookie.jpeg",
-
+        CookieImage1,
+        CookieImage2,
+        CookieImage3
     ]
 
     for (let i = 0; i < cookieImages.length; i++) {

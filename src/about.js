@@ -1,8 +1,10 @@
+import CookieBanner from "./asset/chocolate-chip-cookies.png"
+
 export function loadAbout(contentElement) {
 
     contentElement.style.backgroundImage = ''
 
-    contentElement.style.backgroundImage = "url('./chocolate-chip-cookies.png')"
+    contentElement.style.backgroundImage = `url(${CookieBanner})`
     contentElement.style.backgroundSize = 'cover'
 
     contentElement.classList = 'flex justify-center h-screen w-screen bg-center'

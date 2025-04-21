@@ -1,8 +1,12 @@
+import CookieBanner from "./asset/chocolate-chip-cookies.png"
+import deliveryIcon from "./asset/delivery.svg"
+import pickupIcon from "./asset/store.svg"
+
 export function loadOrder(contentElement) {
 
 
 
-    contentElement.style.backgroundImage = "url('./chocolate-chip-cookies.png')"
+    contentElement.style.backgroundImage = `url(${CookieBanner})`
     contentElement.style.backgroundSize = 'cover'
 
     contentElement.classList = 'flex justify-center h-screen w-screen bg-center'
@@ -23,7 +27,7 @@ export function loadOrder(contentElement) {
     const delivery = document.createElement('button')
     delivery.classList = ' delivery flex flex-col delivery text-3xl bg-purple-500 text-white p-3 rounded-2xl justify-center gap-2 gorditas-bold'
     const deliveryImg = document.createElement('img')
-    deliveryImg.src = './delivery.svg'
+    deliveryImg.src = deliveryIcon
     deliveryImg.style.height = '3em'
     delivery.textContent = 'Delivery'
     main.appendChild(delivery)
@@ -33,7 +37,7 @@ export function loadOrder(contentElement) {
     const pickup = document.createElement('button')
     pickup.classList = 'pickup flex flex-col gap-2 pickup text-3xl bg-purple-500 text-white p-3 rounded-2xl gorditas-bold'
     const pickupImg = document.createElement('img')
-    pickupImg.src = './store.svg'
+    pickupImg.src = pickupIcon
     pickupImg.style.height = '4em'
     pickup.textContent = 'Pickup'
     pickup.appendChild(pickupImg)
