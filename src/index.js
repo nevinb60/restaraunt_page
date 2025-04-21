@@ -5,6 +5,7 @@ import { loadContact } from "./contact";
 import { loadOrder } from "./order";
 
 
+
 //Div to inject content into
 let content = document.getElementById('content');
 
